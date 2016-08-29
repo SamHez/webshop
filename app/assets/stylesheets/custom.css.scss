@@ -1,3 +1,4 @@
+
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -44,6 +45,7 @@ blockquote{
     font-style: italic;
     font-size: 32px;
     color: white;
+    line-height: 50px;
 }
 
 blockquote cite{
@@ -110,5 +112,77 @@ footer a{
     section{
         padding-top: 10px;
     }
+}
+//blog styling
+
+#blog-container{
+//    padding-top: 100px;
+    width: 960px;
+    margin: 0 auto;
+}
+header{
+  text-align: center;
+  background-color: #fff;
+  padding-top: 10px;
+  color: #1a71b8;
+}
+h1{
+  text-align: center;
+}
+
+article{
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+article p{
+  margin: 0 0 1em;
+}
+section.post-head small{
+  display: block;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  border-bottom: solid 1px #eee;
+  color: #00c6a0;
+}
+section.post-head{
+  padding-bottom: 20px;
+}
+section.post-head h2{
+  border-bottom: solid 2px red;
+  padding-bottom: 4px;
+}
+section.post-body{
+  padding-top:4px;
+
+
+}
+
+section.post-body p{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+section.post-footer{
+  font-size: 14px;
+  border-top: solid 1px #eee;
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+}
+#contact-number{
+   text-align: center;
+   font-weight: bold;
+
+}
+
+
+
+footer p{
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
 }
 
