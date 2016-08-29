@@ -9,7 +9,7 @@ body,
     height: 100%;
 }
 .cover{
-    background: url(/assets/couchfriends.jpg) top left no-repeat;
+    background: image-url("couchfriends.jpg") top left no-repeat;
     background-size: cover;
     display: table;
     width:100%;
@@ -75,7 +75,7 @@ h2 + p{
 /*    margin-top: -60px;*/
 }
 #team{
-    background: url(/assets/fan.jpg) top left no-repeat;
+    background: image-url("fan.jpg") top left no-repeat;
     background-size: cover;
     color: white;
     text-align: center;
