@@ -1,0 +1,105 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html,
+body,
+.cover{
+    
+    height: 100%;
+}
+.cover{
+    background-image: url(../images/couchfriends.jpg) top left no-repeat;
+    background-size: cover;
+    display: table;
+    width:100%;
+    padding: 0 20%;
+    box-shadow: inset 0 0 100px #000;
+}
+.cover-text{
+    text-align:center;
+    color:black;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.cover-text h1{
+    
+    margin: 0;
+    font-size: 70px;
+    letter-spacing: -3px;
+}
+
+nav.navbar-inverse{
+    background: rgba(0, 0, 0, 0.5);
+    border:none;
+}
+.testimonial{
+    background: #222;
+}
+blockquote{
+    border: none;
+    margin: 0;
+    font-family: Georgia, Times, serif;
+    font-style: italic;
+    font-size: 32px;
+    color: white;
+}
+
+blockquote cite{
+    display: block;
+    text-align: right;
+    font-style: normal;
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #888;
+    margin-top: 40px;
+    
+}
+
+section{
+    padding: 100px;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0, 0, 60px;
+    text-align: center;
+    font-size: 28px;
+}
+
+h2 + p{
+    text-align: center;
+/*    margin-top: -60px;*/
+}
+#team{
+    background: url(../images/fan.jpg) top left no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    
+}
+
+footer{
+    text-align: center;
+    background: #222;
+    font-family: Helvetica,Arial, sans-serif;
+    padding: 20px;
+    color: white;
+}
+
+footer a{
+    color: hotpink;
+}
+
+@media only screen and (max-width: 568px){
+    .cover h1{
+        font-size: 40px;
+    }
+    section{
+        padding: 20px;
+    }
+}
+
