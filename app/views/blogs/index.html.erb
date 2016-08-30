@@ -6,30 +6,39 @@
   </div>
 </div>
 
-<div id="blog-container">
-  <p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <article>
+    <section class="post-head col-xs-12 ">
+      <h2>Blog Post title</h2>
+      <div class=" blog-image col-md-4 col-md-offset-4">
+        <img src="/assets/jane.jpg" alt="Woman's face" class="img-circle">
+        <h4>Alex Shyaka</h4>
+        <p>CTO and co-founder at <strong>TheRailsShop.</strong></p>
+        <cite><strong>Developer at MTN-Uganda</strong></cite>
+      </div>
+    </section>
+    <small>Posted on <time datetime="2016-8-20 ">August 20, 2016</time></small>
 
-  <article class="col-xs-8 col-sm-12">
-        <section class="post-head">
-          <h2>Blog Post title</h2>
-          <small>Posted on <time datetime="2016-8-20 ">August 20, 2016</time></small>
-        </section>
-        <section class="post-body">
-          <p>This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
-            This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
-            This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
-            This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
-            <strong>Still developing this blog hope to finish it tomorrow</strong>
-          </p>
+    <section class="post-body">
+      <p>This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
+        This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
+        This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
+        This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
+        <strong>Still developing this blog hope to finish it tomorrow</strong>
 
-        </section>
-        <section class="post-footer">
-          <p>Filed under General</p>
-          <p>Written by alex</p>
-        </section>
+      </p>
+
+    </section>
+    <section class="post-footer">
+      <p>Filed under General</p>
+      <p>Written by alex</p>
+    </section>
 
   </article>
-<br>
-<%= link_to 'New Blog', new_blog_path %>
-
+  <br>
+  <%= link_to 'New Blog', new_blog_path %>
 </div>
+
+
+

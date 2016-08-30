@@ -95,8 +95,8 @@ h2 + p{
 //}
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
 /* Styles */
-     .cover h1{
-        font-size: 40px;
+     .cover-text h1{
+        font-size: 12px;
     }
     section{
         padding-top: 10px;
@@ -104,63 +104,46 @@ h2 + p{
 }
 //blog styling
 
-#blog-container{
-//    padding-top: 100px;
-    width: 960px;
-    margin: 0 auto;
-}
-header{
-  text-align: center;
-  background-color: #fff;
-  padding-top: 10px;
-  color: #1a71b8;
-}
-h1{
-  text-align: center;
-}
-
 article{
-  background-color: white;
-  padding: 20px;
-//  margin: 10px 0px;
+    //margin: 40px;
+  margin: 0 auto;
+}
+.blog-image h4, p, cite{
+  font-weight: bold;
+
 }
 
-article p{
-  margin: 0 0 1em;
-}
-section.post-head small{
+small{
   display: block;
-  margin: 0 0 20px;
-  padding: 0 0 20px;
+  margin: 0 200px 10px;
+  padding: 0 0 10px;
   border-bottom: solid 1px #eee;
   color: #00c6a0;
 }
 section.post-head{
-  padding-bottom: 20px;
+ padding-bottom: 5px;
 }
 section.post-head h2{
   border-bottom: solid 2px red;
   padding-bottom: 4px;
+  margin: 0 400px 20px;
 }
 section.post-body{
   padding-top:4px;
-
 
 }
 
 section.post-body p{
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 35px;
+  margin-bottom: 5px;
+}
+section.post-footer{
+
 }
 
-section.post-footer{
-  font-size: 14px;
-  border-top: solid 1px #eee;
-  margin: 20px 0 0;
-  padding: 20px 0 0;
-}
 #contact-number{
    text-align: center;
    font-weight: bold;
