@@ -5,4 +5,6 @@ class Admin < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   validates :name, presence: :true
+
+  has_many :blogs, dependent: :destroy
 end

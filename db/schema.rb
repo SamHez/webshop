@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160831142505) do
+ActiveRecord::Schema.define(version: 20160831151828) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "name",                   limit: 255
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20160831142505) do
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
 
   create_table "blogs", force: :cascade do |t|
+    t.integer  "admin_id",     limit: 4
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.text     "blog_content", limit: 65535

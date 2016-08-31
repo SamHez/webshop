@@ -33,7 +33,9 @@
     </section>
     <section class="post-footer col-sm-4">
       <p>Filed under General</p>
-      <p>Written by alex</p>
+      <%@blogs.each do |blog|%>
+         <p>Written by <%= blog.admin.name%></p>
+      <%end%>
     </section>
 
   </article>
