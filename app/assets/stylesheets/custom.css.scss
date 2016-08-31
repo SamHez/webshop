@@ -1,4 +1,3 @@
-
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -194,3 +193,7 @@ footer p{
   clear: both;
 }
 
+.alert{
+
+  margin-top: 60px;
+}

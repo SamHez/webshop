@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
     
+  devise_for :admins
   resources :blogs
   root 'static_pages#home'
   
