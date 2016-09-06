@@ -32,6 +32,9 @@ gem 'devise'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#red carpet implementation for formatting text for your blog
+gem 'redcarpet'
+gem 'coderay'
 
 group :development, :test do
     # Use mysql as the database for Active Record

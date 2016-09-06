@@ -1,4 +1,4 @@
-<div class="blog-cover">
+<div class="blog-cover" xmlns="http://www.w3.org/1999/html">
   <div class="cover-text">
     <h1>You just have to wing it before you kill it.</h1>
     <blockquote>&ldquo;Successful people are really, really good at making things up as they go. They excel at reacting to reality, rather than working within the confines of a rigid plan.&rdquo;
@@ -10,38 +10,44 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
   <article>
-    <section class="post-head col-xs-12 ">
-      <h2>Blog Post title</h2>
-      <div class=" blog-image col-md-4 col-md-offset-4">
-        <img src="/assets/jane.jpg" alt="Woman's face" class="img-circle">
-        <h4>Alex Shyaka</h4>
-        <p>CTO and co-founder at <strong>TheRailsShop.</strong></p>
-        <cite><strong>Developer at MTN-Uganda</strong></cite>
+    <div class="row">
+        <!--<h2>Blog Post title</h2>-->
+        <div class=" author-image col-sm-2 col-sm-offset-5">
+          <img src="/assets/jane.jpg" alt="Woman's face" class="img-circle">
+        </div>
+       <div class=" author-text col-sm-3 col-sm-offset-5">
+          <h4>Alex Shyaka</h4>
+          <p>Founder TheRailsShop.</p>
+          <cite><strong>Wing it till you make it</strong></cite>
       </div>
-    </section>
-    <small>Posted on <time datetime="2016-8-20 ">August 20, 2016</time></small>
+    </div>
 
-    <section class="post-body col-sm-8 col-sm-offset-2">
-      <p>This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
-        This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
-        This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
-        This is blog is written by me Im just testing out this blogging thing and I hope to finish it byt tomorrow
-        <strong>Still developing this blog hope to finish it tomorrow</strong>
+    <div class="row">
+      <div class="blog">
+        <%@blogs.each do |blog|%>
+            <div class="blog-title col-sm-12"><h2><%= blog.title%></h2></div>
+            <div class=" posted-date  col-sm-8 col-sm-offset-2">
+              <p>Posted <%= time_ago_in_words(blog.created_at)%> ago</p>
+            </div>
 
-      </p>
+            <div class="post-body col-sm-8 col-sm-offset-2">
+              <p><%= markdown(blog.blog_content)%></p>
+            </div>
+            <div class="post-footer col-sm-8 col-sm-offset-2">
+              <cite>Written by <%= blog.admin.name%></cite>
+              <hr>
+            </div>
+            <%if admin_signed_in? and blog.admin_id == 1%>
+                <div class="col-sm-8 col-sm-offset-2"><p><%= link_to 'New Blog', new_blog_path %></p></div>
+            <%end%>
+        <%end%>
+      </div>
 
-    </section>
-    <section class="post-footer col-sm-4">
-      <p>Filed under General</p>
-      <%@blogs.each do |blog|%>
-         <p>Written by <%= blog.admin.name%></p>
-      <%end%>
-    </section>
+    </div>
 
   </article>
-  <div class="col-md-4"><p><%= link_to 'New Blog', new_blog_path %></p></div>
-</div>
 
+</div>
 
 
 

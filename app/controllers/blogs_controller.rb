@@ -7,11 +7,14 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all
+    # @blogs = Blog.where(admin: current_admin).order("created_at DESC")
+    # @listings = Listing.where(user: current_user).order("created_at DESC")
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    @blog = Blog.find(params[:id])
   end
 
   # GET /blogs/new
