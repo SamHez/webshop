@@ -28,8 +28,11 @@
               <hr>
             </div>
             <%if admin_signed_in?%>
-                <div class="col-sm-8 col-sm-offset-2"><p><%= link_to 'New Blog', new_blog_path %></p></div>
+                <div class="col-sm-8 col-sm-offset-2">
+                  <p><%= link_to 'New Blog', new_blog_path %></p>
+                </div>
             <%end%>
+             <div class="col-sm-8 col-sm-offset-2"><p><%= link_to 'Back to blog list', blogs_path %></p></div>
       </div>
 
     </div>
