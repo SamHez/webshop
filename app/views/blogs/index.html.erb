@@ -38,7 +38,7 @@
               <cite>Crafted by <%= blog.admin.name%></cite>
               <hr>
             </div>
-            <%if admin_signed_in?%>
+            <%if signed_in?%>
                 <div class="col-sm-8 col-sm-offset-2"><p><%= link_to 'New Blog', new_blog_path %></p></div>
             <%end%>
         <%end%>

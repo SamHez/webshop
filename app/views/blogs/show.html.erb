@@ -1,27 +1,39 @@
+<p id="notice"><%= notice %></p>
 <div class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-2">
-      <p id="notice"><%= notice %></p>
-      <div class="posted-time">
-        <p>
-          <small>Posted <%= time_ago_in_words(@blog.created_at) %> Ago</small>
-        </p>
-
+  <article>
+    <div class="row">
+      <!--<h2>Blog Post title</h2>-->
+      <div class=" show-page-author-image col-sm-2 col-sm-offset-5">
+        <img src="/assets/jane.jpg" alt="Woman's face" class="img-circle">
       </div>
-      <p>
-        <strong>Author:</strong>
-        <%= @blog.title %>
-      </p>
+      <div class=" author-text col-sm-3 col-sm-offset-5">
+        <h4>Alex Shyaka</h4>
+        <p>Founder TheRailsShop.</p>
+        <cite><strong>Wing it till you make it</strong></cite>
+      </div>
+    </div>
 
-      <p class="blog_content">
-        <strong>Content:</strong>
-        <%= @blog.blog_content %>
-      </p>
+    <div class="row">
+      <div class="blog">
+            <div class="blog-title col-sm-12 col-md-8 col-md-offset-2"><h2><%= @blog.title%></h2></div>
+            <div class=" posted-date  col-sm-8">
+              <small>Posted <%= time_ago_in_words(@blog.created_at)%> ago</small>
+            </div>
 
-
-      <%= link_to 'Edit', edit_blog_path(@blog) %> |
-      <%= link_to 'Back', blogs_path %>
+            <div class="post-body col-sm-8 col-sm-offset-2">
+              <p><%= markdown(@blog.blog_content)%></p>
+            </div>
+            <div class="post-footer col-sm-8 col-sm-offset-2">
+              <cite>Crafted by <%= @blog.admin.name%></cite>
+              <hr>
+            </div>
+            <%if admin_signed_in?%>
+                <div class="col-sm-8 col-sm-offset-2"><p><%= link_to 'New Blog', new_blog_path %></p></div>
+            <%end%>
+      </div>
 
     </div>
-  </div>
+
+  </article>
+
 </div>
