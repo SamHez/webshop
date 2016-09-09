@@ -6,7 +6,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+     @blogs = Blog.all
     # @blogs = Blog.where(admin: current_admin).order("created_at DESC")
     # @listings = Listing.where(user: current_user).order("created_at DESC")
   end

@@ -4,10 +4,10 @@
     <div class="row">
       <!--<h2>Blog Post title</h2>-->
       <div class=" show-page-author-image col-sm-2 col-sm-offset-5">
-        <img src="/assets/jane.jpg" alt="Woman's face" class="img-circle">
+        <%=gravatar_image_tag(@blog.admin.email, class:'img-circle img-responsive', :alt => 'alex shyaka')%>
       </div>
       <div class=" author-text col-sm-3 col-sm-offset-5">
-        <h4>Alex Shyaka</h4>
+        <h4><%= @blog.admin.name%></h4>
         <p>Founder TheRailsShop.</p>
         <cite><strong>Wing it till you make it</strong></cite>
       </div>
