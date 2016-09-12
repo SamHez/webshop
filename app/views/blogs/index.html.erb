@@ -32,7 +32,7 @@
             </div>
 
             <div class="post-body col-sm-8 col-sm-offset-2">
-              <p><%= truncate markdown(blog.blog_content), length: 160%></p>
+              <p><%=  markdown(truncate(blog.blog_content,length: 160))%></p>
               <p><%= link_to 'read more', blog_path(blog.id) %></p>
             </div>
             <div class="post-footer col-sm-8 col-sm-offset-2">

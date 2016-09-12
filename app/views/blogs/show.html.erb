@@ -1,6 +1,6 @@
-<p id="notice"><%= notice %></p>
 <div class="container">
   <article>
+
     <div class="row">
       <!--<h2>Blog Post title</h2>-->
       <div class=" show-page-author-image col-sm-2 col-sm-offset-5">
@@ -27,12 +27,15 @@
               <cite>Crafted by <%= @blog.admin.name%></cite>
               <hr>
             </div>
-            <%if admin_signed_in?%>
-                <div class="col-sm-8 col-sm-offset-2">
-                  <p><%= link_to 'New Blog', new_blog_path %></p>
-                </div>
-            <%end%>
-             <div class="col-sm-8 col-sm-offset-2"><p><%= link_to 'Back to blog list', blogs_path %></p></div>
+        <div class="row">
+          <%if admin_signed_in?%>
+              <div class="new-blog col-sm-2 col-sm-offset-8">
+                <p><%= link_to 'New Blog', new_blog_path %></p>
+              </div>
+          <%end%>
+          <div class="back-tolist col-sm-2 col-sm-offset-2"><p><%= link_to 'Back to blog list', blogs_path %></p></div>
+        </div>
+
       </div>
 
     </div>
