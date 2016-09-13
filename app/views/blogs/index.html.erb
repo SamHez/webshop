@@ -39,7 +39,7 @@
               <cite>Crafted by <%= blog.admin.name%></cite>
               <hr>
             </div>
-            <%if signed_in?%>
+            <%if (signed_in?)&& (current_admin.email=='shyakaster@gmail.com' or current_admin.email=='mbandashyaka@gmail.com') %>
                 <div class="col-sm-8 col-sm-offset-2"><p><%= link_to 'New Blog', new_blog_path %></p></div>
             <%end%>
             <div class="will-paginate col-sm-8 col-sm-offset-2"><%= will_paginate @blogs %></div>
