@@ -25,11 +25,15 @@
                 <p>Founder TheRailsShop.</p>
                 <cite><strong>Wing it till you make it</strong></cite>
               </div>
+
             </div>
             <div class="blog-title col-sm-12 col-md-8 col-md-offset-2"><h2><%= blog.title%></h2></div>
-            <div class=" posted-date  col-sm-8">
-              <small>Posted <%= time_ago_in_words(blog.created_at)%> ago</small>
+            <div class="row">
+              <div class=" posted-date  col-md-8 col-xs-12">
+                <small>Posted <%= time_ago_in_words(blog.created_at)%> ago</small>
+              </div>
             </div>
+
 
             <div class="post-body col-sm-8 col-sm-offset-2">
               <p><%=  markdown(truncate(blog.blog_content,length: 160))%></p>

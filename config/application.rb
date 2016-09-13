@@ -22,19 +22,9 @@ module Webshop
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     #  the code below for sending mail through a contact form
-    # config.action_mailer.smtp_settings = {
-    #     address: "server181.web-hosting.com",
-    #     port: 587,
-    #     domain: "railsshop.club",
-    #     user_name: "shyakaster",
-    #     password: "Alexshyaka@1980",
-    #     authentication: :plain,
-    #     enable_starttls_auto: true
-    # }
-    #
-    # config.action_mailer.default_url_options = {
-    #     host: "railsshop.club"
-    # }
+    config.action_mailer.delivery_method = :message_me
+    config.action_mailer.perform_deliveries = true
+    config.action_mailer.raise_delivery_errors = true
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
