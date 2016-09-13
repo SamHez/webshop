@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2780dc4-3b5a-4735-8b77-367ce612ec50" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/blogs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/blogs/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/send_mail.rb" afterPath="$PROJECT_DIR$/config/initializers/send_mail.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/blogs/show.html.erb" afterPath="$PROJECT_DIR$/app/views/blogs/show.html.erb" />
-    </list>
+    <list default="true" id="e2780dc4-3b5a-4735-8b77-367ce612ec50" name="Default" comment="" />
     <ignored path="webshop.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -31,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48735243" vertical-offset="408" max-vertical-offset="1071">
+            <state vertical-scroll-proportion="-11.115385" vertical-offset="408" max-vertical-offset="1071">
               <caret line="41" column="99" selection-start-line="41" selection-start-column="99" selection-end-line="41" selection-end-column="99" />
               <folding />
             </state>
@@ -61,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devise.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="devise.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4760">
-              <caret line="217" column="47" selection-start-line="217" selection-start-column="47" selection-end-line="217" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.38449112" vertical-offset="0" max-vertical-offset="4760">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -148,7 +143,6 @@
         <option value="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
@@ -156,6 +150,7 @@
         <option value="$PROJECT_DIR$/config/initializers/send_mail.rb" />
         <option value="$PROJECT_DIR$/app/views/blogs/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogs/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
       </list>
     </option>
   </component>
@@ -256,6 +251,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -900,14 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4760">
-          <caret line="217" column="47" selection-start-line="217" selection-start-column="47" selection-end-line="217" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/message.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18829113" vertical-offset="0" max-vertical-offset="632">
@@ -966,8 +975,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48735243" vertical-offset="408" max-vertical-offset="1071">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="408" max-vertical-offset="1071">
           <caret line="41" column="99" selection-start-line="41" selection-start-column="99" selection-end-line="41" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38449112" vertical-offset="0" max-vertical-offset="4760">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
