@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160831151828) do
+ActiveRecord::Schema.define(version: 20160912172749) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "name",                   limit: 255
@@ -27,8 +27,12 @@ ActiveRecord::Schema.define(version: 20160831151828) do
     t.string   "last_sign_in_ip",        limit: 255
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
+    t.string   "confirmation_token",     limit: 255
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
   end
 
+  add_index "admins", ["confirmation_token"], name: "index_admins_on_confirmation_token", unique: true, using: :btree
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
 
@@ -42,6 +46,11 @@ ActiveRecord::Schema.define(version: 20160831151828) do
 
   create_table "image_tables", force: :cascade do |t|
     t.string "image_name", limit: 255
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

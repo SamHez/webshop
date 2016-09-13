@@ -84,6 +84,9 @@ blockquote cite{
 section{
     padding: 100px;
 }
+.message-form{
+  padding-top: 80px;
+}
 h2{
     text-transform: uppercase;
     font-weight: bold;
@@ -245,5 +248,14 @@ footer p{
 //devise styling
 
 .sign-up{
+  padding-top: 40px;
+}
+.resend-form{
+  padding-top: 40px;
+}
+.forgot-password{
+  padding-top: 40px;
+}
+.edit-password{
   padding-top: 40px;
 }

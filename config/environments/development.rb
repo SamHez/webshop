@@ -40,4 +40,15 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
   # require for devise gem
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # send grid settings
+   config.action_mailer.delivery_method = :test
+
+   config.action_mailer.default_url_options = { :host => 'http://localhost:3000/'}
+
+  # send email in development mode
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { address: 'localhost', port: 1025}
 end
