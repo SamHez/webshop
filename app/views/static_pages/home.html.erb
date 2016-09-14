@@ -70,14 +70,17 @@
             <p class="lead">Please enter your email address, to keep abrest with the inside scoop.</p>
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
-                    <form>
+                  <%=form_for Newsletter.new  do |f| %>
                         <div class="input-group">
-                            <input type="text" class="form-control input-lg" placeholder="Enter your email address in here...">
+                            <!--<input type="text" name="email" class="form-control input-lg" placeholder="Enter your email address in here...">-->
+                            <%= f.email_field :email, class: 'form-control input-lg', placeholder: 'Enter your email address in here..'%>
                             <span class="input-group-btn">
-                                <button class="btn btn-warning btn-lg" type="button">Submit</button>
+                                <!--<button class="btn btn-warning btn-lg" type="button">Submit</button>-->
+                              <%= f.submit class:'btn btn-warning btn-lg'%>
                             </span>
                         </div>
-                    </form>
+
+                    <%end%>
                 </div>
             </div>
         </div>

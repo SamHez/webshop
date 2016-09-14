@@ -30,7 +30,7 @@ gem 'gravatar_image_tag'
 gem 'will_paginate'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'pry'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 #red carpet implementation for formatting text for your blog

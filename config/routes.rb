@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   resources :messages, only: [:new, :create]
-
+  resources :newsletters
   get 'static_pages/about'
 
   get 'static_pages/help'
