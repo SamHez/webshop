@@ -15,9 +15,10 @@
                   <ul class="nav navbar-nav navbar-right">
 
                       <li class="active"><%= link_to "Home", root_path %></li>
-                      <li><%= link_to "About", static_pages_about_path %><span class="sr-only">(current)</span> </li>
-                      <li><a href="#team">Our Students</a></li>
-                      <li><%= link_to "Drop us a line!", new_message_path %></li>
+                      <li><a href="/static_pages/about">About</a></li>
+                      <li><a href="/static_pages/our_curriculum">Our Curriculum</a></li>
+                      <li><a href="/static_pages/resources">Resources</a></li>
+                      <li><%= link_to "Contact Us", new_message_path %></li>
                       <li><%= link_to "Blog", blogs_path %></li>
 
                     <% if signed_in?%>
