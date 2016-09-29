@@ -112,14 +112,14 @@ img{
   max-width: 100%;
 
 }
-blockquote {
+blockquote{
   padding: 0;
   border: none;
   font-style: italic;
   text-align: left;
 }
 
-blockquote cite {
+blockquote  cite {
   display: block;
   color: #777;
   margin: 15px 0 0 0;
@@ -170,11 +170,11 @@ nav.navbar-inverse{
     background: rgba(0, 0, 0, 0.5);
     border:none;
 }
-.testimonial{
+.top-testimonial{
     background: #222;
 
 }
-blockquote{
+#top-block blockquote{
     border: none;
     margin: 0;
     font-family: Georgia, Times, serif;
@@ -184,7 +184,7 @@ blockquote{
     line-height: 50px;
 }
 
-blockquote cite{
+#top-block blockquote cite{
     display: block;
     text-align: right;
     font-style: normal;
@@ -378,9 +378,10 @@ footer p{
   section{
     padding-top: 20px;
   }
-  .testimonial {
+  .top-testimonial {
     text-align: center;
   }
+
 }
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
@@ -543,6 +544,7 @@ blockquote {
   border: none;
   font-style: italic;
   text-align: left;
+  line-height: 20px;
 }
 
 blockquote cite {
