@@ -51,6 +51,7 @@ nav.navbar-inverse{
 }
 .testimonial{
     background: #222;
+
 }
 blockquote{
     border: none;
@@ -253,6 +254,9 @@ footer p{
   section{
     padding-top: 20px;
   }
+  .testimonial {
+    text-align: center;
+  }
 }
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
@@ -271,4 +275,6 @@ footer p{
   .btn-action-call{
     padding-bottom: 40px;
   }
+
+
 }
