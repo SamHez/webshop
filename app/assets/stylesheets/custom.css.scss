@@ -5,8 +5,8 @@
 html,
 body,
 .cover{
-    
-    height: 100%;
+  font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
+  height: 100%;
 }
 .cover{
     background: image-url("couchfriends.jpg") top left no-repeat;
@@ -109,25 +109,6 @@ h2 + p{
 // a link
 a:active {
   background-color: yellow;
-}
-
-//
-//@media only screen and (max-width: 568px){
-//    .cover h1{
-//        font-size: 40px;
-//    }
-//    section{
-//        padding-top: 20px;
-//    }
-//}
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
-     .cover-text h1{
-        font-size: 12px;
-    }
-    section{
-        padding-top: 10px;
-    }
 }
 //blog styling
 
@@ -262,4 +243,32 @@ footer p{
 }
 .edit-password{
   padding-top: 40px;
+}
+//Media queries
+@media only screen and (max-width: 568px){
+
+  .cover h1{
+    font-size: 40px;
+  }
+  section{
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+
+  .cover-text h1{
+    font-size: 12px;
+  }
+  section{
+    padding-top: 10px;
+  }
+}
+@media only screen and (min-device-width: 360px){
+  .cover-text h1{
+    padding-top: 80px;
+  }
+  .btn-action-call{
+    padding-bottom: 40px;
+  }
 }

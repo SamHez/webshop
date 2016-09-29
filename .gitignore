@@ -11,3 +11,6 @@
 /log/*
 !/log/.keep
 /tmp
+/main.crt
+/bundle.ca-bundle
+/therailsshop.p7b
