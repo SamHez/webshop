@@ -7,7 +7,7 @@
 html,
 body,
 .cover{
-  margin-top: 50px;
+  margin-top: 0px;
   font-size: 16px;
   font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
   background: image_url('tile.jpg') top left repeat;
@@ -252,13 +252,13 @@ article{
 }
 
 
-small{
-  display: block;
-  margin: 0 200px 10px;
-  padding: 0 0 10px;
-  border-bottom: solid 2px #eee;
-  color: darkred;
-}
+//small{
+//  display: block;
+//  margin: 0 200px 10px;
+//  padding: 0 0 10px;
+//  border-bottom: solid 2px #eee;
+//  color: darkred;
+//}
 .post-head{
  padding-bottom: 2px;
 }
@@ -418,7 +418,7 @@ footer p{
   }
 
   #optin p {
-    margin: 0 0 10px;
+    margin: 0 0 5px;
   }
 
   #featurette iframe {
@@ -560,7 +560,7 @@ blockquote:before {
 /* ==== HERO ==== */
 
 #hero {
-  background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
+  background: image_url('hero-bg.jpg') 50% 0 repeat fixed;
   min-height: 500px;
   position: relative;
   display: table;
@@ -648,12 +648,12 @@ section h3{
 }
 
 .feature-image-default {
-  background: url('../img/stuff-feature.jpg') no-repeat;
+  background: image_url('tuff-feature.jpg') no-repeat;
   background-size: cover;
 }
 
 .feature-image-default-alt {
-  background: url('../img/hipster-stuff.jpg') no-repeat;
+  background: image_url('hipster-stuff.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -688,14 +688,14 @@ section h3{
   text-align: center;
 }
 #featurette{
-  background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed;
+  background: image_url('stuff-bg.jpg') 50% 100% repeat fixed;
   background-size: cover;
   text-align: center;
   color: white;
 
 }
 .modal-content{
-  background: url('../img/tile.jpg') top left repeat
+  background: image_url('tile.jpg') top left repeat
 }
 .badge.social {
   background: #ccc;
@@ -723,7 +723,7 @@ section h3{
   background: #db4b39;
 }
 #instructor {
-  background: white url('../img/brad-elvis.png') 90% -10px no-repeat;
+  background: white image_url('brad-elvis.png') 90% -10px no-repeat;
 }
 #instructor h2{
   margin: 0 0 20px;
