@@ -1,7 +1,9 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+// font awesome css fonts
+@import "font-awesome-sprockets";
+@import "font-awesome";
 html,
 body,
 .cover{
@@ -816,7 +818,7 @@ i.ci {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background: url('../img/icon-sprite.png') no-repeat;
+  background: image_url('icon-sprite.png') no-repeat;
 }
 
 .ci.ci-computer 	{ background-position: 0 0; }
