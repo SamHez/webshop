@@ -18,10 +18,10 @@
         <%@blogs.each do |blog|%>
             <div class="row">
               <!--<h2>Blog Post title</h2>-->
-              <div class=" author-image col-sm-2 col-sm-offset-5">
+              <div class=" author-image col-xs-2 col-xs-offset-5 col-sm-2 col-sm-offset-5">
                 <%=gravatar_image_tag(blog.admin.email, class:'img-circle img-responsive', :alt => 'alex shyaka')%>
               </div>
-              <div class=" author-text col-sm-3 col-sm-offset-5">
+              <div class=" author-text col-xs-8 col-xs-offset-4 col-md-3 col-md-offset-5">
                 <h4><%= blog.admin.name%></h4>
                 <p>Founder TheRailsShop.</p>
                 <cite><strong>Wing it till you make it</strong></cite>
