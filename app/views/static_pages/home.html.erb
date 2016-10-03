@@ -303,27 +303,5 @@
         </div><!-- row -->
       </div><!-- container -->
     </section><!-- kudos -->
-    <!-- SIGN UP SECTION
-	================================================== -->
 
-    <section id="signup" data-type="background" data-speed="4">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <h2>Are you ready to take your coding skills to the <strong>next level</strong>?</h2>
-                  <%=form_for Newsletter.new  do |f| %>
-                        <div class="input-group">
-                            <!--<input type="text" name="email" class="form-control input-lg" placeholder="Enter your email address in here...">-->
-                            <%= f.email_field :email, class: 'form-control input-lg ',placeholder: 'Enter your email address in here..'%>
-                            <span class="input-group-btn">
-                                <!--<button class="btn btn-warning btn-lg" type="button">Submit</button>-->
-                              <%= f.submit value: 'Submit Email', class:' btn-success btn-lg'%>
-                            </span>
-                        </div>
-
-                    <%end%>
-                </div>
-            </div>
-        </div>
-    </section>
-
+   <%=render 'layouts/partials/signup'%>
