@@ -2,22 +2,26 @@
 ================================================== -->
 <footer>
   <div class="container">
-    <div class="col-sm-3">
-      <p><a class="logo" href="/">Rails coding shop</a></p>
-    </div><!-- end col -->
-    <div class="col-sm-6">
-      <!--<nav>-->
-        <!--<ul class="list-unstyled list-inline">-->
-          <!--<li><a href="">Home</a></li>-->
-          <!--<li><a href="">Blog</a></li>-->
-          <!--<li><a href="">Resources</a></li>-->
-          <!--<li><a href="">Contact</a></li>-->
-          <!--&lt;!&ndash;<li class="signup-link"><a href="">Sign up now</a></li>&ndash;&gt;-->
-        <!--</ul>-->
-      <!--</nav>-->
-    </div><!-- end col -->
-    <div class="col-sm-3">
-      <p class="pull-right">&copy; 2016 TheRailsShop LTD</p>
-    </div><!-- end col -->
+    <div class="row">
+      <div class="col-sm-3">
+        <p><a class="logo" href="/">Rails coding shop</a></p>
+      </div><!-- end col -->
+      <div class="footer col-sm-6">
+        <ul class="list-unstyled list-inline">
+          <li><%= link_to "Home", root_path %></li>
+          <li><a href="/static_pages/about">About us</a></li>
+          <li><a href="/static_pages/our_curriculum">Our Curriculum</a></li>
+          <li><a href="/static_pages/resources">Resources</a></li>
+          <li><%= link_to "Contact Us", new_message_path %></li>
+          <li><%= link_to "Blog", blogs_path %></li>
+        <!--<li class="signup-link"><a href="">Sign up now</a></li>-->
+        </ul>
+
+      </div><!-- end col -->
+      <div class="col-sm-3">
+        <p class="pull-right">&copy; 2016 TheRailsShop LTD</p>
+      </div><!-- end col -->
+    </div>
+
   </div><!-- container -->
 </footer>

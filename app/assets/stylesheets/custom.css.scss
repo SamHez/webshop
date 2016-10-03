@@ -63,10 +63,11 @@ button, input, .btn, a.btn{
   background-color: #dd5638;
   border-color: #d95131;
 }
+//footer styling
 footer {
   background: #3e4249;
   color: white;
-  padding: 20px 0 10px;
+  padding: 20px 0 40px;
   font-size: 12px;
 }
 
@@ -258,8 +259,9 @@ article{
    
     
 }
-.blog-image h4, p, cite{
+.cover-text cite{
   font-weight: bold;
+  text-align: right;
 
 }
 
@@ -332,30 +334,7 @@ article{
    font-weight: bold;
 
 }
-//footer styling
 
-footer{
-  text-align: center;
-  background: #222;
-  font-family: medium-content-serif-font,Helvetica,Arial, sans-serif;
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  height: 40px;
-  padding-top: 20px;
-  color: white;
-}
-
-footer a{
-  color: hotpink;
-}
-footer p{
-  text-align: center;
-  color: #aaa;
-  font-size: 14px;
-
-}
 
 .alert{
 
@@ -406,6 +385,13 @@ footer p{
 
 
   }
+
+  //Hero styling================================
+
+
+  #hero #logo {
+    margin-top: 30px;
+  }
   section{
     padding-top: 10px;
   }
@@ -414,6 +400,9 @@ footer p{
   .cover-text h1{
     padding-top: 80px;
 
+  }
+  #hero #logo {
+    margin-top: 30px;
   }
   .btn-action-call{
     padding-bottom: 40px;
@@ -530,7 +519,7 @@ button, input, .btn, a.btn{
 footer {
   background: #3e4249;
   color: white;
-  padding: 20px 0 10px;
+  padding: 20px 0 40px;
   font-size: 12px;
 }
 
@@ -597,12 +586,12 @@ blockquote:before {
   vertical-align: middle;
 }
 
-#hero .hero-text #logo {
+#hero #logo  {
   margin-top: 30px;
 }
-//#hero #logo{
-//  padding-top: 40px;
-//}
+.hero-text{
+  margin-top:40px;
+}
 
 #price-timeline {
   margin: 30px 0 60px;
@@ -808,10 +797,11 @@ section h3{
 #signup .btn {
   font-size: 24px;
 }
+//footer styling
 footer {
   background: #3e4249;
   color: white;
-  padding: 20px 0 10px;
+  padding: 20px 0 40px;
   font-size: 12px;
 }
 
