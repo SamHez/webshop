@@ -413,7 +413,7 @@ footer p{
 }
 
 @media screen and (max-width : 768px) {
-  .logo {
+  #logo {
     width: 50%;
   }
 
@@ -590,7 +590,7 @@ blockquote:before {
 
 #price-timeline .price {
   display: inline-block;
-  width: 30%;
+  width: 40%;
   margin: 0 2% 0 0;
   background: #3e4249;
   padding: 10px 20px 30px;
@@ -891,7 +891,7 @@ button[type="submit"]:hover {
 }
 
 @media screen and (max-width : 768px) {
-  .logo {
+  #logo {
     width: 50%;
   }
 
@@ -1076,7 +1076,7 @@ button[type="submit"]:hover {
 }
 
 @media screen and (max-width : 768px) {
-  .logo {
+  #logo {
     width: 50%;
   }
 
