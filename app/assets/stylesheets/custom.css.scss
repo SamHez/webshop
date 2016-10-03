@@ -597,9 +597,12 @@ blockquote:before {
   vertical-align: middle;
 }
 
-#hero .hero-text {
+#hero .hero-text #logo {
   margin-top: 30px;
 }
+//#hero #logo{
+//  padding-top: 40px;
+//}
 
 #price-timeline {
   margin: 30px 0 60px;
