@@ -1,4 +1,4 @@
 class Newsletter < ActiveRecord::Base
-  validates :email, presence: true
-  validates :email, :uniqueness => {:message => 'email already submitted in the database'}
+  validates :email,:name,:telephone, presence: true
+  validates :email,:telephone, :uniqueness => {:message => 'One of the fields has already submitted in the database'}
 end

@@ -1,23 +1,23 @@
 class NewslettersController < ApplicationController
   #layout 'static_pages/home.html.erb'
   def new
-    @email = Newsletter.new
+    @trainee = Newsletter.new
   end
 
   def create
-    @email = Newsletter.new(email_params)
-    if @email.save
+    @trainee = Newsletter.new(trainee_params)
+    if @trainee.save
       #binding.pry
-      redirect_to root_path, notice: 'Email was successfully submitted' # or redirect, or render leave empty to render views/visitors/create.html.erb
+      redirect_to root_path, notice: 'Credentials were successfully submitted' # or redirect, or render leave empty to render views/visitors/create.html.erb
     else
-      redirect_to root_path, notice: 'Email was not submitted'
+      redirect_to root_path, notice: 'Credentials were not submitted- one of the fields has already been submitted-either telephone or email.'
 
     end
 
   end
   private
-  def email_params
-    params.require(:newsletter).permit(:email)
+  def trainee_params
+    params.require(:newsletter).permit(:email,:name,:telephone)
   end
 
 end

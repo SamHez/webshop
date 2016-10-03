@@ -7,13 +7,21 @@
       <div class="col-sm-6 col-sm-offset-3">
         <h2>Are you ready to take your coding skills to the <strong>next level</strong>?</h2>
         <%=form_for Newsletter.new  do |f| %>
-            <div class="input-group">
-              <!--<input type="text" name="email" class="form-control input-lg" placeholder="Enter your email address in here...">-->
-              <%= f.email_field :email, class: 'form-control input-lg ',placeholder: 'Enter your email address in here..'%>
-              <span class="input-group-btn">
+            <div class="signup-form form-group">
+              <!--<div class ="input-group-fields">-->
+                    <%= f.text_field :name,class: 'form-control input-lg ',placeholder: 'Enter your name in here..'%>
+                  <!--</div>-->
+                  <div class="input-group-tel">
+                    <%= f.text_field :telephone, class: 'form-control input-lg ',placeholder: 'Enter your telephone in here..'%>
+                  </div>
+                  <!--<input type="text" name="email" class="form-control input-lg" placeholder="Enter your email address in here...">-->
+                  <!--<div class="input-group-btn">-->
+                    <%= f.email_field :email, class: 'form-control input-lg ',placeholder: 'Enter your email address in here..'%>
+              <!--</div>-->
+              <div class="input-group-btn">
                                 <!--<button class="btn btn-warning btn-lg" type="button">Submit</button>-->
-                <%= f.submit value: 'Submit Email', class:' btn-success btn-lg'%>
-                            </span>
+                <%= f.submit value: 'Submit Credentials', class:' btn-success btn-lg'%>
+              </div>
             </div>
 
         <%end%>
