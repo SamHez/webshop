@@ -6,11 +6,17 @@ class StaticPagesController < ApplicationController
       render file: "public/404.html", status: :not_found
     end
   end
+  def download
+      send_file(
+          "#{Rails.root}/public/write_up.pdf",
+          filename: "TheRailsShopCurriculum.pdf",
+          type: "application/pdf"
+      )
+  end
 
   private
   def valid_page?
     File.exist?(Pathname.new(Rails.root + "app/views/static_pages/#{params[:page]}.html.erb"))
   end
-
 
 end
