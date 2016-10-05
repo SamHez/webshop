@@ -842,27 +842,27 @@ footer li.signup-link a:hover {
 }
 /*Curriculum section================================*/
 #old-way{
-  display: inline-block;
-  width: 50%;
-  position: relative;
-  background-color: rgb(239, 243, 244);
-  text-align: left;
-  padding: 30px 50px;
-  height: 350px;
-  float: left;
+//  display: inline-block;
+//  //width: 50%;
+//  position: relative;
+// // background-color: rgb(239, 243, 244);
+//  text-align: left;
+//  padding: 30px 0;
+//  height: 350px;
+//  float: left;
 
 
 
 }
 #new-way{
-  display: inline-block;
-  width: 50%;
-  position: relative;
-  background-color: rgb(239, 243, 244);
-  text-align: center;
-  padding: 30px 50px;
-  height: 350px;
-  border-left: solid 1px #ddd;
+//  display: inline-block;
+//  //width: 50%;
+//  position: relative;
+// // background-color: rgb(239, 243, 244);
+//  text-align: center;
+//  padding: 30px 0;
+//  height: 350px;
+  //border-left: solid 1px #ddd;
 }
 .container-curriculum p, h3 {
   display: block;
@@ -876,6 +876,8 @@ footer li.signup-link a:hover {
 }
 .container-curriculum{
   padding-bottom: 80px;
+ // padding-left: 40px;
+  background-color: rgb(239, 243, 244);
 }
 
 
@@ -1220,5 +1222,4 @@ button[type="submit"]:hover {
     min-height: 0;
   }
 }
-
 
