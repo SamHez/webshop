@@ -583,7 +583,7 @@ blockquote:before {
 /* ==== HERO ==== */
 
 #hero {
-  background: image_url('hero-bg.jpg') 50% 0 repeat fixed;
+  background: image_url('couchfriends.jpg') 50% 0 repeat fixed;
   min-height: 500px;
   position: relative;
   display: table;
@@ -607,6 +607,7 @@ blockquote:before {
 }
 .hero-text{
   margin-top:40px;
+  line-height: 2em;
 }
 
 #price-timeline {
@@ -622,10 +623,16 @@ blockquote:before {
   padding: 10px 20px 30px;
   position: relative;
   vertical-align: top;
+     -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+    border-radius: 20px;
 }
 
 #price-timeline .price.active {
   background: #dd5638;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+    border-radius: 20px;
 }
 
 #price-timeline .price span {
