@@ -16,7 +16,6 @@
     <div class="row">
       <div class="blog">
         <%@blogs.each do |blog|%>
-            <div class="row">
               <!--<h2>Blog Post title</h2>-->
               <div class=" author-image col-xs-2 col-xs-offset-5 col-sm-2 col-sm-offset-5">
                 <%=gravatar_image_tag(blog.admin.email, class:'img-circle img-responsive', :alt => 'alex shyaka')%>
@@ -28,27 +27,30 @@
               </div>
 
             </div>
-            <div class="blog-title col-sm-12 col-md-8 col-md-offset-2"><h2><%= blog.title%></h2></div>
+      </div>
             <div class="row">
-              <div class=" posted-date  col-md-8 col-xs-12 col-md-offset-2">
-                <small>Posted <%= time_ago_in_words(blog.created_at)%> ago</small>
-              </div>
-            </div>
+                <div class="blog">
+                    <div class="blog-title col-sm-12 col-md-8 col-md-offset-2"><h2><%= blog.title%></h2></div>
+        <!--            <div class="row">-->
+                      <div class=" posted-date  col-md-8 col-xs-12 col-md-offset-2">
+                        <small>Posted <%= time_ago_in_words(blog.created_at)%> ago</small>
+                      </div>
+        <!--            </div>-->
 
 
-            <div class="post-body col-sm-8 col-sm-offset-2">
-              <p><%=  markdown(truncate(blog.blog_content,length: 160))%></p>
-              <p><%= link_to 'read more', blog_path(blog.id) %></p>
-            </div>
-            <div class="post-footer col-sm-8 col-sm-offset-2">
-              <cite>Crafted by <%= blog.admin.name%></cite>
-              <hr>
-            </div>
-            <%if (signed_in?)&& (current_admin.email=='shyakaster@gmail.com' or current_admin.email=='mbandashyaka@gmail.com') %>
-                <div class="col-sm-8 col-sm-offset-2"><p><%= link_to 'New Blog', new_blog_path %></p></div>
-            <%end%>
-            <div class="will-paginate col-sm-8 col-sm-offset-2"><%= will_paginate @blogs %></div>
-        <%end%>
+                    <div class="post-body col-sm-8 col-sm-offset-2">
+                      <p><%=  markdown(truncate(blog.blog_content,length: 160))%></p>
+                      <p><%= link_to 'read more', blog_path(blog.id) %></p>
+                    </div>
+                    <div class="post-footer col-sm-8 col-sm-offset-2">
+                      <cite>Crafted by <%= blog.admin.name%></cite>
+                      <hr>
+                    </div>
+                    <%if (signed_in?)&& (current_admin.email=='shyakaster@gmail.com' or current_admin.email=='mbandashyaka@gmail.com') %>
+                        <div class="col-sm-8 col-sm-offset-2"><p><%= link_to 'New Blog', new_blog_path %></p></div>
+                    <%end%>
+                    <div class="will-paginate col-sm-8 col-sm-offset-2"><%= will_paginate @blogs %></div>
+                <%end%>
 
       </div>
 
