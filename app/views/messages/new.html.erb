@@ -1,7 +1,7 @@
 <%= render 'layouts/partials/defaulthero'%>
 <div class="container">
   <div class="row">
-    <div class="col-md-4 col-md-offset-4">
+    <div class="col-md-4 col-md-offset-2">
         <%= form_for @message do |f| %>
           <% if @message.errors.any? %>
               <div id="error_explanation"class="alert alert-danger alert-dismissable">
@@ -35,5 +35,12 @@
             </div>
         <% end %>
         </div>
+        <section>
+            <div class="col-md-4 col-md-offset-2">
+           <p class="lead"><img src=/assets/alex.jpg></p>
+            
+        </div>
+        </section>
+        
       </div>
     </div>

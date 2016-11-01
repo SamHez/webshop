@@ -142,7 +142,7 @@ blockquote:before {
 }
 
 .cover{
-    background: image-url("couchfriends.jpg") top left no-repeat;
+    background: image-url("coding.jpg") top left no-repeat;
     background-size: cover;
     display: table;
 //    width:80%;
@@ -202,6 +202,7 @@ nav.navbar-inverse{
     border:none;
 }
 .top-testimonial{
+    padding: 10px 10px;
     background: #222;
 
 }
@@ -225,6 +226,8 @@ nav.navbar-inverse{
     text-transform: uppercase;
     color: #888;
     margin-top: 40px;
+    padding-top: 0px;
+   
     
 }
 // home page styling
@@ -573,7 +576,7 @@ blockquote {
 blockquote cite {
   display: block;
   color: #777;
-  margin: 15px 0 0 0;
+  margin: 5px 0 0 0;
 }
 
 blockquote:before {
@@ -583,7 +586,7 @@ blockquote:before {
 /* ==== HERO ==== */
 
 #hero {
-  background: image_url('couchfriends.jpg') 50% 0 repeat fixed;
+  background: image_url('stuff-bg.jpg') 50% 0 repeat fixed;
   min-height: 500px;
   position: relative;
   display: table;
@@ -623,16 +626,16 @@ blockquote:before {
   padding: 10px 20px 30px;
   position: relative;
   vertical-align: top;
-     -webkit-border-radius: 20px;
+  -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 #price-timeline .price.active {
   background: #dd5638;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 #price-timeline .price span {

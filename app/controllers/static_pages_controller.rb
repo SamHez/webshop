@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
   end
   def download
       send_file(
-          "#{Rails.root}/public/write_up_v2.pdf",
+          "#{Rails.root}/public/write_up_v1.pdf",
           filename: "TheRailsShopCurriculum.pdf",
           type: "application/pdf"
       )
