@@ -8,6 +8,6 @@ class MessageMailer < ApplicationMailer
   end
   def newsletter_email(newsletter)
     @newsletter = newsletter
-	mail(to: @newsletter.email, subject: "My Subject")
+	mail(to: @newsletter.email, subject: " Thanks for subscribing to Therailsshop coding club")
   end
 end
