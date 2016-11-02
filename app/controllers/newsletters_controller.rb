@@ -15,6 +15,7 @@ class NewslettersController < ApplicationController
     end
 
   end
+ 
   private
   def trainee_params
     params.require(:newsletter).permit(:email,:name,:telephone)

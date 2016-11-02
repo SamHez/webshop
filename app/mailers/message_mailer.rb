@@ -6,4 +6,8 @@ class MessageMailer < ApplicationMailer
 
     mail from: @msg.email, subject: @msg.subject, body: @msg.content
   end
+  def newsletter_email(newsletter)
+    @newsletter = newsletter
+	mail(to: @newsletter.email, subject: "My Subject")
+  end
 end
