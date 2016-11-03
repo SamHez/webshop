@@ -7,8 +7,9 @@ class NewslettersController < ApplicationController
   def create
     @trainee = Newsletter.new(trainee_params)
     if @trainee.save
-      #binding.pry
-      redirect_to root_path, notice: 'Credentials were successfully submitted-you will hear from us soon.' # or redirect, or render leave empty to render views/visitors/create.html.erb
+      # Deliver the signup email
+      MessageMailer.send_signup_email(@trainee).deliver_now
+      redirect_to root_path, notice: 'Credentials were submitted and a welcome email has been sent to your email address'
     else
       redirect_to root_path, notice: 'Credentials were not submitted- one of the fields has already been submitted-either telephone or email.'
 
