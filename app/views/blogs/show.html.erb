@@ -34,11 +34,12 @@
           <div class="back-to-list col-sm-4 col-sm-offset-2"><p><%= link_to 'Back to blog list', blogs_path %></p></div>
         </div>
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <!--Disqus code goes here -->
-            <%= render 'layouts/partials/disqus'%>
-         </div>
-      
+          <div class="disqus">
+             <div class="col-sm-8 col-sm-offset-2">
+                <!--Disqus code goes here -->
+                <%= render 'layouts/partials/disqus'%>
+            </div>
+          </div>
       </div>
        
     </div>
