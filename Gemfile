@@ -31,6 +31,8 @@ gem 'devise'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'gravatar_image_tag'
 gem 'will_paginate'
+# generating permalinks
+gem 'has_permalink'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'pry'

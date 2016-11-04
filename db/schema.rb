@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161003184335) do
+ActiveRecord::Schema.define(version: 20161104194929) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "name",                   limit: 255
@@ -42,7 +42,10 @@ ActiveRecord::Schema.define(version: 20161003184335) do
     t.datetime "updated_at",                 null: false
     t.text     "blog_content", limit: 65535
     t.string   "title",        limit: 255
+    t.string   "permalink",    limit: 255
   end
+
+  add_index "blogs", ["permalink"], name: "index_blogs_on_permalink", using: :btree
 
   create_table "image_tables", force: :cascade do |t|
     t.string "image_name", limit: 255
