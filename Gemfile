@@ -41,7 +41,8 @@ gem 'pry'
 #red carpet implementation for formatting text for your blog
 gem 'redcarpet'
 gem 'coderay'
-
+# gem 'social-share-button', '~> 0.1.6'
+ gem 'awesome-share-buttons', github: 'evansobkowicz/awesome-share-buttons'
 group :development, :test do
     # Use mysql as the database for Active Record
   gem 'mysql2', '>= 0.3.13', '< 0.5'

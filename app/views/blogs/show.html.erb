@@ -32,7 +32,11 @@
             </div>
         <div class="row">
           <div class="back-to-list col-sm-4 col-sm-offset-2"><p><%= link_to 'Back to blog list', blogs_path %></p></div>
+          <div class="back-to-list col-sm-6">
+            <%= awesome_share_buttons(@blog.title) %>
+          </div>
         </div>
+
         <div class="row">
           <div class="disqus">
              <div class="col-sm-8 col-sm-offset-2">

@@ -13,6 +13,7 @@
  * file per style scope.
  *
  *= require_tree .
+*= require awesome-share-buttons
  *= require_self
  *= require jquery-ui
  */
