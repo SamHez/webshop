@@ -9,11 +9,11 @@ class MessageMailer < ApplicationMailer
   # Automated through a scheduler on heroku monthly newsletter subscription
   def newsletter_email(newsletter)
     @newsletter = newsletter
-	mail(to: @newsletter.email subject: " Alex Shyaka from the Therailsshop coding club")
+	mail(to: @newsletter.email, subject: " Alex Shyaka from the Therailsshop coding club")
   end
   # send a signup email to the user, pass in the user object that   contains the user's email address
   def send_signup_email(newsletter)
    @newsletter = newsletter
-	mail(to: @newsletter.email subject: " Therailsshop is humbled by your subscription")
+	mail(to: @newsletter.email, subject: " Therailsshop is humbled by your subscription")
   end
 end
