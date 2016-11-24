@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   devise_for :admins
   resources :blogs
 
-   resources :homes, only: [:show]
+   # resources :homes, only: [:show]
   # root to: "homes#show"
 
   resources :messages, only: [:new, :create]
