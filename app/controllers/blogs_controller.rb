@@ -6,7 +6,9 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
+   
      @blogs = Blog.paginate(:page => params[:page],:per_page => 2).order("created_at DESC")
+      pry
      #@users = User.paginate(:page => params[:page], :per_page => 5)
     # @blogs = Blog.where(admin: current_admin).order("created_at DESC")
     # @listings = Listing.where(user: current_user).order("created_at DESC")

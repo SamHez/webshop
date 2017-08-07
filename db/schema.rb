@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161104194929) do
+ActiveRecord::Schema.define(version: 20170807092544) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "name",                   limit: 255
@@ -32,18 +32,20 @@ ActiveRecord::Schema.define(version: 20161104194929) do
     t.datetime "confirmation_sent_at"
   end
 
-  add_index "admins", ["confirmation_token"], name: "index_admins_on_confirmation_token", unique: true, using: :btree
-  add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
-  add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
+  add_index "admins", ["confirmation_token"], name: "index_admins_on_confirmation_token", unique: true
+  add_index "admins", ["email"], name: "index_admins_on_email", unique: true
+  add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
 
   create_table "blogs", force: :cascade do |t|
-    t.integer "admin_id",     limit: 4
-    t.text    "blog_content", limit: 65535, null: false
-    t.string  "title",        limit: 255
-    t.string  "permalink",    limit: 255
+    t.integer  "admin_id",     limit: 4
+    t.text     "blog_content", limit: 65535, null: false
+    t.string   "title",        limit: 255
+    t.string   "permalink",    limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  add_index "blogs", ["permalink"], name: "index_blogs_on_permalink", using: :btree
+  add_index "blogs", ["permalink"], name: "index_blogs_on_permalink"
 
   create_table "image_tables", force: :cascade do |t|
     t.string "image_name", limit: 255
@@ -62,6 +64,6 @@ ActiveRecord::Schema.define(version: 20161104194929) do
     t.string   "telephone",  limit: 255
   end
 
-  add_index "newsletters", ["email"], name: "index_newsletters_on_email", using: :btree
+  add_index "newsletters", ["email"], name: "index_newsletters_on_email"
 
 end

@@ -36,7 +36,7 @@ gem 'nokogiri', '~> 1.6', '>= 1.6.8.1'
 gem 'has_permalink'
 # Use Unicorn as the app server
 # gem 'unicorn'
-# gem 'pry'
+gem 'pry'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 #red carpet implementation for formatting text for your blog
@@ -45,8 +45,9 @@ gem 'coderay'
 # gem 'social-share-button', '~> 0.1.6'
  gem 'awesome-share-buttons', github: 'evansobkowicz/awesome-share-buttons'
 group :development, :test do
+  gem 'sqlite3', '~> 1.3', '>= 1.3.13'
     # Use mysql as the database for Active Record
-  gem 'mysql2', '>= 0.3.13', '< 0.5'
+  # gem 'mysql2', '>= 0.3.13', '< 0.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
