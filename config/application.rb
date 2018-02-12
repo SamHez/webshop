@@ -26,5 +26,8 @@ module Webshop
     config.action_mailer.perform_deliveries = true
     config.action_mailer.raise_delivery_errors = true
     config.active_record.raise_in_transactional_callbacks = true
+    # This tells Rails to serve error pages from the Rails app itself
+     # rather than using static error pages in public/.
+    config.exceptions_app = self.routes
   end
 end
