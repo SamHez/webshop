@@ -1,27 +1,53 @@
 <!-- FOOTER
 ================================================== -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-3">
-        <p><a class="logo" href="/">Rails coding shop</a></p>
-      </div><!-- end col -->
-      <div class="footer col-sm-6">
-        <ul class="list-unstyled list-inline">
-          <li><%= link_to "Home", root_path %></li>
-          <li><a href="/static_pages/about">About us</a></li>
-          <li><a href="/static_pages/our_curriculum">Our Curriculum</a></li>
-          <li><a href="/static_pages/resources">Resources</a></li>
-          <li><%= link_to "Contact Us", new_message_path %></li>
-          <li><%= link_to "Blog", blogs_path %></li>
-        <!--<li class="signup-link"><a href="">Sign up now</a></li>-->
-        </ul>
+<footer class="bg-one">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-logo">
+                <a href="index.html"><img src="/assets/logo.png" alt="Logo"></a>
+                <h5><a href="#" class="tran3s">alexshyaka@therailsshop.club</a></h5>
+                <h6 class="p-color">+256752969844</h6>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 footer-list">
+              <h4>Quick Links</h4>
+              <ul>
+                <li class="tran3s"><%= link_to "Home", root_path %></li>
+                <li><a href="/static_pages/about" class="tran3s">Who We Are</a></li>
+                <li><a href="/static_pages/resources" class="tran3s">Resources</a></li>
+                <li><a href="/static_pages/our_curriculum" class="tran3s">Our Curriculum</a></li>
+                <li><%= link_to "Contact Us", new_message_path %></li>
+                <li><%= link_to "Blog", blogs_path %></li>
+                
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 footer-list">
+              <h4>About Us</h4>
+              <ul>
+                <li><a href="about-us.html" class="tran3s">About The Rails Coding Shop</a></li>
+                <li><a href="http://railsgirls.com/uganda.html" class="tran3s">Rails Girls</a></li>
+                
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 footer-subscribe">
+              <h4>Subscribe to our mailing list</h4>
+              <form action="#">
+                <input type="text" placeholder="Enter your mail">
+              </form>
+              <ul>
+                <li><a href="https://www.facebook.com/TheRailsShop/" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/therailsshop" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/therailsshop/" class="tran3s"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                
+              </ul>
+            </div>
+          </div> <!-- /.row -->
 
-      </div><!-- end col -->
-      <div class="col-sm-3">
-        <p class="pull-right">&copy; 2016 TheRailsShop LTD</p>
-      </div><!-- end col -->
-    </div>
+          <div class="bottom-footer clearfix">
+            
+            <p class="float-left">&copy; 2018 <a href="#" class="tran3s p-color">TheRailsShop LTD</a>. Created with <i class="fa fa-heart"></i> by <a href="http://www.samhez.com"  target="_blank">Samuel Epodoi</a></p>
+          </div>
+        </div> <!-- /.container -->
+      </footer>
 
-  </div><!-- container -->
-</footer>
