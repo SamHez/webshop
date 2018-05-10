@@ -3,28 +3,28 @@
 **/
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,900|Poppins:300,400,500,600');
 /*----bootstrap css ----- */
-@import url('../vendor/bootstrap/bootstrap.css');
+@import url('/assets/bootstrap.css');
 /*----bootstrap Select ----- */
-@import url('../vendor/bootstrap-select/dist/css/bootstrap-select.css');
+@import url('/assets/bootstrap-select.css');
 /*----camera-slider---*/
-@import url('../vendor/Camera-master/css/camera.css');
+@import url('/assets/camera.css');
 /*------- Mega menu ------*/
-@import url('../vendor/bootstrap-mega-menu/css/menu.css');
-/*----font awesome -------*/
-@import url('../fonts/font-awesome/css/font-awesome.min.css');
+@import url('/assets/css/menu.css');
+/*----font awesome 
+@import url('/fonts/font-awesome.min.css');-------*/
 /*----owl-carousel css----*/
-@import url('../vendor/owl-carousel/owl.carousel.css');
-@import url('../vendor/owl-carousel/owl.theme.css');
+@import url('/assets/owl.carousel.css');
+@import url('/assets/owl.theme.css');
 /*-------- animated css ------*/
-@import url('../vendor/WOW-master/css/libs/animate.css');
+@import url('/assets/animate.css');
 /*-------Hover Css --------*/
-@import url('../vendor/hover.css');
-/*--------- flat-icon ---------*/
-@import url('../fonts/icon/font/flaticon.css');
+@import url('/assets/hover.css');
+/*--------- flat-icon
+@import url('/fonts/icon/font/flaticon.css'); ---------*/
 /*----------- Fancybox css -------*/
-@import url('../vendor/fancybox/dist/jquery.fancybox.min.css');
+@import url('/assets/jquery.fancybox.min.css');
 /*--------- Jquery ui ---------*/
-@import url('../vendor/jquery-ui/jquery-ui.min.css');
+@import url('/assets/jquery-ui.min.css');
 
 /*==================== Click Top ====================*/
 .scroll-top {
@@ -56,11 +56,11 @@
 
  @font-face {
   font-family: 'font-awesome';
-  src: url('../fonts/font-awesome/fonts/fontawesome-webfont.ttf');
-  src: url('../fonts/font-awesome/fonts/fontawesome-webfont.eot'), /* IE9 Compat Modes */
-       url('../fonts/font-awesome/fonts/fontawesome-webfont.html') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/font-awesome/fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/font-awesome/fonts/fontawesome-webfont.svg') format('svg'); /* Legacy iOS */
+  src: url('/assets/fonts/font-awesome/fonts/fontawesome-webfont.ttf');
+  src: url('/assets/fonts/font-awesome/fonts/fontawesome-webfont.eot'), /* IE9 Compat Modes */
+       url('/assets/fonts/font-awesome/fonts/fontawesome-webfont.html') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/font-awesome/fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/font-awesome/fonts/fontawesome-webfont.svg') format('svg'); /* Legacy iOS */
  }
 
  body {
@@ -467,7 +467,7 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
           clip-path: url(#shape-one);
 }
 .theme-shape-two {
-  background: url(../svg/1.svg);
+  background: url(/assets/svg/1.svg);
   height: 100%;
 }
 #theme-main-banner {margin-bottom: 90px;}
@@ -507,7 +507,7 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
   bottom: 0;
 }
 #theme-main-banner.banner-one .camera_overlayer {
-  background: url(..//assets/home/shape-1.png) no-repeat center center;
+  background: url(/assets/home/shape-1.png) no-repeat center center;
 }
 #theme-main-banner.camera_wrap .camera_pag .camera_pag_ul {
   position: absolute;
@@ -876,7 +876,7 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
           clip-path: url(#shape-one);
 }
 .more-about-us .theme-shape-three {
-  background: url(../svg/2.svg);
+  background: url(/assets/svg/2.svg);
   width: 865px;
   height: 525px;
   position: absolute;
@@ -1127,7 +1127,7 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
           clip-path: url(#shape-one);
 }
 .testimonial-section .theme-shape-four {
-  background: url(../svg/2.svg);
+  background: url(/assets/svg/2.svg);
   width: 865px;
   height: 525px;
   position: absolute;
